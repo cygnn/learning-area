@@ -31,6 +31,23 @@
     </ul>
 
     <script>
+      const unordered = document.querySelector("ul");
+      const input = document.querySelector("input");
+      const btn = document.querySelector("button");
+      btn.addEventListener("click", () =>{ 
+        const val = input.value;
+        input.value = "";
+
+        const list = document.createElement('li');
+        const span = document.createElement('span');
+        const delBtn = document.createElement('button');
+        li.appendChild(span);
+        li.appendChild(delBtn);
+
+        delBtn.addEventListener("click", (delete) =>{
+          delete.removeChild(li);
+        });
+      });
 
     </script>
   </body>
